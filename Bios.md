@@ -18,11 +18,13 @@ Die Tatsächliche Taktrate ergibt sich hierbei aus Clock * Multiplikator. Also s
 Um den <link INTERN RAM>RAM</link> zu Übertackten, kann man die Taktrate und die Timings anpassen. Das übertackten des <link INTERN RAM>RAM's</link> hat im bezug auf die Spannung, den Strom und der Hitze die selben Vor- und Nachteile wie die <link INTERN CPU>CPU</link>. Allerdings müssen die RAM Timings nach oben angepasst werden, sollte die Taktrate erhöht werden. Denn wenn die Timings in Kombination mit der Taktrate nicht lang genug sein, so kann der <link INTERN RAM>RAM</link> nicht schnell genug die Aufgaben abarbeiten und es kann zu einen page fault fehler kommen, welcher das OS zum absturtz bringt.
 
 ### Boot Priorität
-In dem Menu der Boot Priorität kann festgelegt werden, in welcher reinfolge, von Massenspeicher, dass BIOS versuchen soll das OS zu laden.
+In dem Menu der Boot Priorität kann festgelegt werden in welcher reinfolge, von Speichermedien, dass BIOS versuchen soll das OS zu starten. Das ist so gemeint das wenn er auf dem ersten Speichermedium kein System findet er versucht von dem zweiten das System zu laden und so weiter. Kann er letzten endes garkein OS Starten so zeigen die meisten BIOS's Nachrichten wie "no boot device found" an.
 
 ### Boot Menu
+Es ist ein Menu wo alle Speicher medien aufgelistet werden, wo man dann angeben soll von welchem das BIOS versuchen soll zu laden. Klapt dies nicht, weil er z.B. nichts zum Starten findet, fängt er einfach an die Boot Priorität abzuarbeiten.
 
 ## Hardware Initialisierung
+
 
 ## Boot
 
