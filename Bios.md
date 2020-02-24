@@ -11,13 +11,14 @@ Das User Interface des BIOS ist eine Text Basierte oberfläche, welche zur Konfi
 Das Overcloking, oder auch Übertackten gennant, ist das verändern der Hardware eigenschaften, welche die Leistung beeinflussen. Damit dies Funktioniert muss das <link INTERN Mainboard>Mainboard</link> sowie die Komponenten diese eigenschaft auch Unterstützen. Übertaktet werden zurzeit eigentlich nur die <link INTERN CPU>CPU</link>, <link INTERN GPU>GPU</link>, <link INTERN RAM>RAM</link> und in manchen fällen auch der <link INTERN Monitor>Monitor</link>. Hierbei ist das Overclocking komplett aus dem OS heraus durchführbar, wofür allerdings das BIOS dies Unterstützen muss, sowie spezielle Programme benötigt werden, wie z.B. für RAM und CPU AMD Ryzen Master <img bios_0006.png>, für die GPU MSI Afterburner <img bios_0005.png> oder für den Monitor das NVIDIA Controle Panel vom Treiber <img bios_0007.png>.
 
 #### CPU
-Um die CPU zu übertackten muss die <link INTERN CPU>CPU</link> dies auch Unterstützen. In denn meisten fällen wird die Übertacktung durch die Blockierung des Multiplikator's der Frequenz verhindert. Sollte diese allerdings freigegeben sein, so kann man diesen ändern. Dieser kann sowohl nach oben als auch nach unten verändert werden. Wenn der Wert nach unten verändert wird, veringert man die Taktrate der CPU. Dies hat den Vorteil, dass die CPU nun weniger Strom benötigt und weniger Hitze produziert. Es ist auch möglich die Taktrate selbst zu verändern, was allerdings nicht so oft gemacht wird. Sollte allerdings die Taktrate nach oben angepasst werden, so benötgt die CPU mehr Strom, produziert mehr wärme und die Wahrscheinlichkeit das Fehler bei den Berechnungen entstehen steigen. Die CPU bekommt allerdings nicht automatisch mehr Strom, weshalb man ab einen gewissen Punkt auch die Spannung anheben muss, was zu einem Defekt der Komponenten führen kann, sollte diese zu stark angehoben werden.
+Um die CPU zu übertackten muss die <link INTERN CPU>CPU</link> dies auch Unterstützen. In denn meisten fällen wird die Übertacktung durch die Blockierung des Multiplikator's der Frequenz verhindert. Sollte diese allerdings freigegeben sein, so kann man diesen ändern. Dieser kann sowohl nach oben als auch nach unten verändert werden. Wenn der Wert nach unten verändert wird, veringert man die Taktrate der CPU. Dies hat den Vorteil, dass die CPU nun weniger Strom benötigt und weniger Hitze produziert. Es ist auch möglich die Taktrate selbst zu verändern, was allerdings nicht so oft gemacht wird. Sollte allerdings die Taktrate nach oben angepasst werden, so benötgt die CPU mehr Strom, produziert mehr wärme und die Wahrscheinlichkeit das Fehler bei den Berechnungen entstehen steigen. Die CPU bekommt allerdings nicht automatisch mehr Strom, weshalb man ab einen gewissen Punkt auch die Spannung anheben muss, was zu einem Defekt der <link INTERN CPU>CPU</link> und/oder des <link INTERN Mainboard>Mainboard</link> führen kann, sollte diese zu stark angehoben werden. 
+Die Tatsächliche Taktrate ergibt sich hierbei aus Clock * Multiplikator. Also sollte z.B. der Clock auf 100 MHz stehen und der Multiplikator auf 36 stehen so entsteht eine Tatsächliche Taktrate von 3.6 GHz. Hierbei könnte die Übertacktung wie folgt aussehen <img bios_0008.png></img>
 
 #### RAM
-Um den RAM zu Übertackten, kann man die Taktrate und die Timings anpassen. Das übertackten des RAM's hat im bezug auf die Spannung, den Strom und der Hitze die selben Vor- und Nachteile wie die CPU. Allerdings müssen die RAM Timings nach oben angepasst werden, sollte die Taktrate erhöht werden. Denn wenn die Timings in Kombination mit der Taktrate nicht lang genug sein, so kann der RAM nicht schnell genug die Aufgaben abarbeiten und es kann zu einen page fault fehler kommen, welcher das OS zum absturtz bringt.
+Um den <link INTERN RAM>RAM</link> zu Übertackten, kann man die Taktrate und die Timings anpassen. Das übertackten des <link INTERN RAM>RAM's</link> hat im bezug auf die Spannung, den Strom und der Hitze die selben Vor- und Nachteile wie die <link INTERN CPU>CPU</link>. Allerdings müssen die RAM Timings nach oben angepasst werden, sollte die Taktrate erhöht werden. Denn wenn die Timings in Kombination mit der Taktrate nicht lang genug sein, so kann der <link INTERN RAM>RAM</link> nicht schnell genug die Aufgaben abarbeiten und es kann zu einen page fault fehler kommen, welcher das OS zum absturtz bringt.
 
 ### Boot Priorität
-
+In dem Menu der Boot Priorität kann festgelegt werden, in welcher reinfolge, von Massenspeicher, dass BIOS versuchen soll das OS zu laden.
 
 ### Boot Menu
 
@@ -31,10 +32,8 @@ Um den RAM zu Übertackten, kann man die Taktrate und die Timings anpassen. Das 
 
 ## User Interface
 
-### Boot Priorität
-
-### Boot Menu
-
 ### Bios Update
 
 ## Hardware Initialisierung
+
+## Boot
