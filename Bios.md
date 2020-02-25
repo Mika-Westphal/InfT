@@ -47,7 +47,7 @@ Das User Interface des UEFI's besitzt meistens im vergleich zum dem des BIOS ein
 <IMG bios_0004.png>
 
 ## Hardware Initialisierung und Boot
-Die Hardware Initialisierung ist soweit identisch zu der vom BIOS. Allerdings unterscheidet sich das Booten bom BIOS sehr stark da das UEFI schon allein vier verschidene Bootmodes besitzt. Diese wären "UEFI booting", "CSM booting", "Network booting" und "Secure boot".
+Die Hardware Initialisierung ist soweit identisch zu der vom BIOS. Allerdings unterscheidet sich das Booten vom BIOS sehr stark da das UEFI schon allein vier verschidene Bootmodes besitzt. Diese wären "UEFI booting", "CSM booting", "Network booting" und "Secure boot".
 
 ### UEFI booting
 UEFI benötigt zum Booten keinen Boot Sector, sondern auf einen Boot Manager. Dieser führt den definierten Bootloader aus, welcher in der zuvor geladenen Bootkonfiguration zu finden ist. Zudem kann automatisch ein Bootloader auf einem Gerät gefunden werden, da es hierfür standartisierte Namen und Pfade gibt. Also als Beispiel müsste für einen x86_64 Computer der Bootloader an der stelle <EFI_SYSTEM_PARTITION>/EFI/BOOT/BOOTX64.efi ligen. Dies ermöglicht es auch von Tragbaren Datenträger, wie z.B. ein USB Stick, zu Booten. Hierbei erkennt das UEFI auch welche Partitionstablle vorligt. Sollte auf dem Startmedium, von welcher gestartet werden soll eine GPT-Partitionstablle vorliegen so verbleibt das UEFI im "UEFI booting". Sollte allerdings das Startmedium einen MBR Boot Sector besitzen, so wechseln die meisten Firmwares zu dem "CSM booting". Auch wenn die UEFI Spezifikation eine volle MBR unterstützung vorsieht, verhindert dies auf den meisten Firmwares das "UEFI booting" mit MBR Datenträger.
