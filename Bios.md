@@ -1,4 +1,4 @@
-# Rechtschreib fehler möglich, da dieser Text mit extremer Crunch Time geschrieben wurde! Trotzdem habe ich versucht die Fehler zu beheben.
+# Rechtschreibfehler möglich, da dieser Text mit extremer Crunch Time geschrieben wurde! Trotzdem habe ich versucht die Fehler zu beheben.
 
 # BIOS
 Das BIOS (Basic Input Output System) ist die Firmware des <LINK INTERN Mainboard>Mainboards</LINK>, welche aufgaben wie z. B. die Hardware Initialisierung oder die Bereitstellung von Runtime Services (Siehe unten für weitere Informationen) für das <LINK INTERN OS>OS</LINK> und deren Programme übernimmt. Ein BIOS ist eigentlich auf jedem Gerät zu finden, wo der Entwickler/Hersteller die Hardware Initialisierung selber übernimmt. Geräte, bei denen dies nicht der Fall ist, sind z. B. der 6502 (Die <LINK INTERN CPU>CPU</LINK> der NES oder des C64) oder der Ricoh 5A22 aus der SNES.
